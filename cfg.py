@@ -2,8 +2,8 @@
 
 
 '''dataset'''
-datasetpath = 'coco2017' # use coco(http://cocodataset.org/#home) in original paper
-style_image_path = 'dataset/styles/starry_night.jpg'
+datasetpath = '' # use coco(http://cocodataset.org/#home) in original paper
+style_image_path = 'dataset/styles/candy.jpg'
 
 
 '''train'''

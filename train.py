@@ -61,12 +61,12 @@ def train(cfg):
 			features_ori = vgg_net(images_ori)
 			features_transform = vgg_net(images_transform)
 			# --content loss
-			content_loss = l2_loss(features_ori[1], features_transform[1]) * 1e5
+			content_loss = l2_loss(features_ori[2], features_transform[2]) * 2e-6
 			# --style loss
 			style_loss = 0
 			for x1, x2 in zip(features_transform, gram_style):
 				style_loss += l2_loss(getGramMatrix(x1), x2[:images.size(0), :, :])
-			style_loss = style_loss * 1e10
+			style_loss = style_loss * 1e5
 			total_loss = content_loss + style_loss
 			total_loss.backward()
 			optimizer.step()
