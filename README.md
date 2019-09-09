@@ -4,7 +4,7 @@ Implementation of Perceptual Losses for Real-Time Style Transfer and Super-Resol
 ```
 
 # Introduction in Chinese
-prepare
+https://mp.weixin.qq.com/s/Ed-1fWOIhI52G-Ugrv7n9Q
 
 # Environment
 ```sh
