@@ -11,7 +11,7 @@ datasetpath = 'dataset/images' # use coco(http://cocodataset.org/#home) in origi
 							...
 							--foldersn
 					'''
-style_image_path = 'dataset/styles/candy.jpg' # the target style image path
+style_image_path = 'dataset/styles/starry_night.jpg' # the target style image path
 
 
 '''train'''
@@ -25,5 +25,5 @@ backupdir = 'backup' # backup folder
 save_interval = 500 # every save_interval batchs, save the model
 logfilepath = 'train.log' # file to save the train log
 checkpointpath_restore = '' # used to restore model
-style_loss_weight = 1e5 # used to balance the style loss and content loss
-content_loss_weight = 2e-6 # used to balance the style loss and content loss
+style_loss_weight = 5e5 # used to balance the style loss and content loss
+content_loss_weight = 1e-6 # used to balance the style loss and content loss

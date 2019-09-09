@@ -20,6 +20,7 @@ python 3.5+(have installed the neccessary dependencies):
 	--tqdm
 	--pillow
 	--argparse
+	--sk-video
 ```
 
 # Usage
@@ -64,7 +65,10 @@ Run "python test.py --datapath <imagepath/videopath> --checkpointpath <checkpoin
 ```
 
 # Effect
-prepare
+#### Picture
+![img](./material/output.jpg)
+#### Video
+![giphy](./material/output.gif)
 
 # References
 ```sh

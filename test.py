@@ -51,8 +51,8 @@ def test(datapath, checkpointpath, outputpath):
 		frames = []
 		for frame in tqdm.tqdm(extractFrames(datapath), desc='Process video'):
 			with torch.no_grad():
-				frames += [reconstructImage(transformer_net(transform(frame).unsqueeze(0))[0])]
-		writer = skvideo.io.FFmpegWriter('output_%d.gif' % int(time.time()))
+				frames += [reconstructImage(transformer_net(transform(frame).unsqueeze(0).type(FloatTensor))[0], cfg.mean, cfg.std)]
+		writer = skvideo.io.FFmpegWriter(os.path.join(outputpath, 'output_%d.gif' % int(time.time())))
 		for frame in tqdm.tqdm(frames, desc='Saving result'):
 			writer.writeFrame(frame)
 		writer.close()
