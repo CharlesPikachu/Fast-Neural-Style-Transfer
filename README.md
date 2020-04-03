@@ -37,9 +37,9 @@ optional arguments:
 
 # Results
 #### Picture
-![img](./material/output.jpg)
+![img](./docs/output.jpg)
 #### Video
-![giphy](./material/output.gif)
+![giphy](./docs/output.gif)
 
 # References
 ```
@@ -50,4 +50,4 @@ optional arguments:
 # More
 #### WeChat Official Accounts
 *Charles_pikachu*  
-![img](./material/pikachu.jpg)
+![img](./docs/pikachu.jpg)
