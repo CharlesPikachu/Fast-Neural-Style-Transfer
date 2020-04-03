@@ -3,14 +3,6 @@
 
 '''dataset'''
 datasetpath = 'dataset/images' # use coco(http://cocodataset.org/#home) in original paper
-					'''
-					datasetpath example:
-						-images
-							--folders1
-							--folders2
-							...
-							--foldersn
-					'''
 style_image_path = 'dataset/styles/starry_night.jpg' # the target style image path
 
 
